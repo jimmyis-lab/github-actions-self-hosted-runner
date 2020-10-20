@@ -12,4 +12,7 @@ jobs:
 
     steps:
     - name: Say Something on Server
-      run: echo 'Hello World from GitHub Self-Hosted Runner'
+      run: |
+        echo "Hello World from GitHub Self-Hosted Runner"
+        echo "$(date +'%Y-%m-%dT%H:%M:%S')"
+
