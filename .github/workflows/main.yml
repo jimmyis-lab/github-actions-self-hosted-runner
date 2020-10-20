@@ -1,0 +1,16 @@
+name: Experiments on GitHub Actions Self-Hosted Runner
+runs-on: self-hosted
+
+on:
+  pull_request:
+    branches:
+      - github-actions-testing
+
+jobs:
+  test-github-hook:
+    name: Testing on GitHub Hook
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Say Something on Server
+      run: echo 'Hello World from GitHub Self-Hosted Runner'
